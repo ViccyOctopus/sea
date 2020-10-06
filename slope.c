@@ -17,7 +17,21 @@ int main(void) {
     slope = ((y2 - y1)/(x2 - x1));
 
     //output
-    printf("\t The slope of the line is: %.2f", slope);
+    if (x1 != x2 && y1 != y2) {
+      printf("\t The slope of the line is: %.2f", slope);
+    }
+
+    else if (x1 == x2 && y1 == y2) {
+      printf("\t You have entered the coordinates of a point. No line exists.\n");
+    }
+
+    else if (x1 == x2) {
+      printf("\tThe slope is undefined, the line is vertical.\n");
+    }
+    
+    else if (y1 == y2) {
+      printf("\tThe slope is zero, the line is horizontal.\n");
+    }
 
 
     return 0;
