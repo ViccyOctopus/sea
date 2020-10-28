@@ -17,7 +17,7 @@ int main(void) {
     slope = ((y2 - y1)/(x2 - x1));
 
     //output
-    if (x1 != x2 && y1 != y2) {
+    if (x1 != x2) {
       printf("\t The slope of the line is: %.2f", slope);
     }
 
